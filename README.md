@@ -42,7 +42,7 @@ OR
 Create a desktop entry 
 
 ```
-touch /usr/share/xsessions/chadwm.desktop  
+touch /usr/share/xsessions/nadwm.desktop 
 ```
 
 ```
