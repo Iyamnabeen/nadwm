@@ -2,7 +2,7 @@
 
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/lol.png">
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x.png">
-<img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x01.png">
+<img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/oho.png">
 # Setup 
 -you can run the script to get at once
 
