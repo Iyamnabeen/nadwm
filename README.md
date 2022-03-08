@@ -1,3 +1,8 @@
+# nadwm (Initial look)
+
+<img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/lol.png">
+<img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x.png">
+
 # Setup 
 -you can run the script to get at once
 
