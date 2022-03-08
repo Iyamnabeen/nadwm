@@ -1,4 +1,4 @@
-# nadwm (Initial look)
+# nadwm 
 
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/lol.png">
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x.png">
