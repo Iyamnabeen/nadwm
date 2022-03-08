@@ -1,4 +1,9 @@
 # Setup 
+-you can run the script to get at once
+
+```
+wget https://raw.githubusercontent.com/Iyamnabeen/nadwm/main/setup.sh && chmod +x setup.sh && ./setup.sh
+```
 # Font
 
 - You need to install JetBrains Nerd Mono fonts from AUR 
