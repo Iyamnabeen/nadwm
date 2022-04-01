@@ -1,5 +1,5 @@
 # nadwm Now This is an official part of [Metis Linux ](https://github.com/metis-os)
-<img src="https://github.com/Iyamnabeen/nadwm/blob/main/walls/metis.png alt="drawing" width="200"">
+<img src="https://github.com/Iyamnabeen/nadwm/blob/main/walls/metis.png alt="metis" width="200"">
 
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/lol.png">
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x.png">
