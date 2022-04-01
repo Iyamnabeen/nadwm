@@ -1,22 +1,15 @@
-/*
-  _                                   _                     
- (_)                                 | |                    
-  _ _   _  __ _ _ __ ___  _ __   __ _| |__   ___  ___ _ __  
- | | | | |/ _` | '_ ` _ \| '_ \ / _` | '_ \ / _ \/ _ \ '_ \ 
- | | |_| | (_| | | | | | | | | | (_| | |_) |  __/  __/ | | |
- |_|\__, |\__,_|_| |_| |_|_| |_|\__,_|_.__/ \___|\___|_| |_|
-     __/ |                                                  
-    |___/   ##st                                                
+/* See LICENSE file for copyright and license details. */
 
+/*
+ * appearance
+ *
+ * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {
-  "FreeMono:style=Bold:pixelsize=20",
-  "Unifont:pixelsize=16",
-  "JoyPixels:pixelsize=14:antialias=true:autohint=true",
-  "siji:pixelsize=20",
+	"JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true",
 };
-static int borderpx = 5;
+static int borderpx = 2;
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
   "grep -oP '(((http|https|ftp|gopher)|mailto)[.:][^ >\"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>\">\):]' | dmenu -w $WINDOWID | xargs -r linkhandler",
@@ -119,39 +112,46 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.8;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* 8 normal colors */
-  [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  [1] = "#cc241d", /* red     */
-  [2] = "#98971a", /* green   */
-  [3] = "#d79921", /* yellow  */
-  [4] = "#458588", /* blue    */
-  [5] = "#b16286", /* magenta */
-  [6] = "#689d6a", /* cyan    */
-  [7] = "#a89984", /* white   */
+	/* 8 normal colors */
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
-  /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#fb4934", /* red     */
-  [10] = "#b8bb26", /* green   */
-  [11] = "#fabd2f", /* yellow  */
-  [12] = "#83a598", /* blue    */
-  [13] = "#d3869b", /* magenta */
-  [14] = "#8ec07c", /* cyan    */
-  [15] = "#ebdbb2", /* white   */
+	/* 8 bright colors */
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
 
-  [256] = "#32302f",
-  [257] = "#1d2021",
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc",
+	"#555555",
 };
+
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor
+ * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 257;
-static unsigned int defaultcs = 15;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -194,7 +194,7 @@ static uint forcemousemod = ShiftMask;
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
-const unsigned int mousescrollincrement = 3;
+const unsigned int mousescrollincrement = 1;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
   { XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollincrement},      0, /* !alt */ -1 },
