@@ -1,4 +1,4 @@
-# nadwm Now
+# nadwm
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/lol.png">
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/wtf0x.png">
 <img src="https://github.com/Iyamnabeen/nadwm/blob/main/ss/oho.png">
@@ -61,9 +61,4 @@ Comment=dwm of a haxor
 Exec= .xinitrc
 Type=Application 
 ```
-
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/iyamnabeen/nadwm/total?color=%2381a2be&logo=linux&logoColor=c5c8c6&style=for-the-badge">
-
-This is an official part of [Metis Linux ](https://github.com/metis-os)
-<img src="https://github.com/Iyamnabeen/nadwm/blob/main/walls/metis.png"> ##METIS LINUX
 
